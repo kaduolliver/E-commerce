@@ -8,10 +8,36 @@ body {
     overflow-x: hidden;
 }
 
+#typing-title {
+    position: fixed;
+    padding-left: 20px;
+    padding-bottom: 1px;
+    overflow: hidden; /* Esconde o texto até que ele seja "digitado" */
+    border-right: 2px solid white; /* Cursor piscando */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    margin: 0 auto;
+    letter-spacing: 0.15em; /* Espaçamento entre letras */
+    font-size: 2.5em;
+    background: linear-gradient(200deg, #cce66f, #f5f106);
+    font-family:'Courier New', Courier, monospace;
+    background-clip: text;
+    color: transparent;
+    animation: slideIn 2s ease-out forwards;   
+}
+
+.subtitle {
+    padding: 130px 10px;
+}
+
+  @keyframes slideIn {
+    from { left: -100px; opacity: 0; }
+    to { left: 0; opacity: 1; }
+}
+
 .top-bar {
     font-size: 15px;
     position: fixed;
-    background: linear-gradient(to top, #228B22, rgb(255, 255, 255));
+    background: black;
     top: 0;
     width: 100%;
     height: 80px;
@@ -19,7 +45,7 @@ body {
     backdrop-filter: blur(10px);
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
     overflow: hidden;
-    color: #3498DB;
+    color: #050505;
     padding: 2px 20px;
     display: flex;
     justify-content: space-between;
