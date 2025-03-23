@@ -15,7 +15,7 @@ window.addEventListener('scroll', function() {
 const titulo = document.querySelector("h1");
 titulo.textContent = "";
 
-const title = "gCommerce";
+const title = "Welcome to gCommerce!";
 const titleElement = document.getElementById("typing-title");
 let index = 0;
 
@@ -23,7 +23,7 @@ function typeWriter() {
     if (index < title.length) {
         titleElement.innerHTML += title.charAt(index);
         index++;
-        setTimeout(typeWriter, 200); // Velocidade da digitação
+        setTimeout(typeWriter, 100); // Velocidade da digitação
     } else {
         titleElement.style.borderRight = "none"; 
     }

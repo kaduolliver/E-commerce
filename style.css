@@ -8,6 +8,10 @@ body {
     overflow-x: hidden;
 }
 
+.content {
+    flex: 1; /* Faz o conteúdo principal ocupar o espaço entre o topo e a navegação */
+}
+
 #typing-title {
     position: fixed;
     padding-left: 20px;
@@ -52,4 +56,60 @@ body {
     align-items: center;
     z-index: 1000;
     transition: top 0.3s ease-in-out; 
+}
+
+#carousel-1 {
+    position: relative;
+    top: 70%;
+}
+
+.card-1 {
+    position: relative;
+    text-align: center;
+    bottom: 620px;
+    left: 50px;
+    background-color: black;
+    border-radius: 10%;
+    transition: transform 0.3s; /* Atribui suavidade ao efeito hover */
+}
+
+.card-1:hover {
+    transform: translateY(-10px); /* Animação simples ao passar o mouse */
+}
+
+.card-body {
+    color: white;
+}
+
+.card-title {
+    color: white;
+    position: relative;
+    top: 20px;
+}
+
+.card-text {
+    position: relative;
+    color: white;
+    top: 40px;
+}
+
+.card-text-2 {
+    position: relative;
+    top: 60px;
+}
+
+.price {
+    color: white;
+    font-size: 30px;
+}
+
+.price-content {
+    color: gray;
+}
+
+.button-1 {
+    position: relative;
+    top: 80px;
+    background-color: darkblue !important;
+    color: white !important;
 }
