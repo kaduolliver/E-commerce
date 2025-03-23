@@ -91,16 +91,30 @@ body {
     position: relative;
     color: white;
     top: 40px;
+    font-size: 15px;
 }
 
-.card-text-2 {
+.middle-content {
     position: relative;
-    top: 60px;
+    top: 30px;
 }
 
 .price {
     color: white;
     font-size: 30px;
+}
+
+.parcelado {
+    position: relative;
+    bottom: 20px;
+}
+
+.text-base {
+    color: white;
+}
+
+.other-texts {
+    color: gray;
 }
 
 .price-content {
@@ -109,7 +123,49 @@ body {
 
 .button-1 {
     position: relative;
-    top: 80px;
+    top: 20px;
     background-color: darkblue !important;
     color: white !important;
+}
+
+.card-2 {
+    position: relative;
+    text-align: center;
+    bottom: 1100px;
+    left: 370px;
+    background-color: black;
+    border-radius: 10%;
+    transition: transform 0.3s; /* Atribui suavidade ao efeito hover */
+}
+
+.card-2:hover {
+    transform: translateY(-10px); /* Animação simples ao passar o mouse */
+}
+
+.card-3 {
+    position: relative;
+    text-align: center;
+    bottom: 1580px;
+    left: 690px;
+    background-color: black;
+    border-radius: 10%;
+    transition: transform 0.3s; /* Atribui suavidade ao efeito hover */
+}
+
+.card-3:hover {
+    transform: translateY(-10px); /* Animação simples ao passar o mouse */
+}
+
+.card-4 {
+    position: relative;
+    text-align: center;
+    bottom: 2060px;
+    left: 1010px;
+    background-color: black;
+    border-radius: 10%;
+    transition: transform 0.3s; /* Atribui suavidade ao efeito hover */
+}
+
+.card-4:hover {
+    transform: translateY(-10px); /* Animação simples ao passar o mouse */
 }
